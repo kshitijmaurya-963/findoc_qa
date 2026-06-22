@@ -77,7 +77,7 @@ class RAGPipeline:
         avg_top3 = sum(scores[:3]) / min(3, len(scores))
         confidence = float((max_score + avg_top3) / 2.0)
 
-        if max_score < 0.4:  # heuristic threshold
+        if max_score < 0.2:  # heuristic threshold
             return {
                 "answer": "I do not have enough information in the documents to answer this question.",
                 "sources": [

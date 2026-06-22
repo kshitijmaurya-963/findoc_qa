@@ -5,5 +5,3 @@ __pycache__/
 temp/
 .streamlit/
 .DS_Store
-data/index/
-data/pdfs/
